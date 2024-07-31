@@ -82,20 +82,7 @@ python query_data.py "Which role does Adam Goldberg plays?"
 
  --------------------------------
  
-
-**Workflow**
-
- Inference
-
-To use the trained Llama model for question answering, you can utilize the inference script. Here's how:
-
-1. Load the pretrained Llama model (or train your own as described above).
-2. Create a question prompt using the provided utility functions.
-3. Generate responses to your questions using the Llama model.
-4. Analyze and evaluate the responses as needed.
-
-
-
+!!! chabfe at the end
 **Project Structure**
 
 The project structure is organized as follows:
