@@ -8,6 +8,8 @@ Figure 1.
 
 ## Getting Started
 
+TriviaQA dataset Source: https://www.kaggle.com/datasets/vissarionmoutafis/triviaqatosquad?resource=download 
+
 ### Prerequisites
 
 - Get access to Language Model (Llama model at https://llama.meta.com/llama-downloads/)
