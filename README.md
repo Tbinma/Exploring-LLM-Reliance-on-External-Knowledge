@@ -64,25 +64,12 @@ example and code is only with dense
 
 8.  Evaluate the system answers using LLMs-as-judges:
 ```
-streamlit run app.py
+llm eval.py
 ```
+Testbeds can be found in folder
 
-9. Testbeds can be found in folder
 
 
-!!!
- --------------------------------
-3. Setup [LLM, retriever] before being able to do inference:
-
- 
-   - Case 2: If you choose to do inference with replicate with our models locally, you'll need to have `REPLICATE_API_TOKEN` setup as an environment variable.
-
-4. Test run to query the Chroma DB, the below command will return an output based on RAG and the selected model:
-```
-python query_data.py "Which role does Adam Goldberg plays?"
-```
-
- --------------------------------
  
 !!! chabfe at the end
 **Project Structure**
