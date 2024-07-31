@@ -1,6 +1,10 @@
 # QA-RAG: Exploring LLM Reliance on External Knowledge 
 
-Some text about the study ... 
+Some text about the study ...  Abstract / link to paper / ... Overview
+## Overview
+Llama
+RAG
+
 
 **Table of Contents**
 
@@ -9,6 +13,35 @@ Some text about the study ...
 - Workflow
    - Inference
 - Project Structure
+
+
+## Getting Started
+
+### Prerequisites
+
+- Get access to Language Model (Llama model at https://llama.meta.com/llama-downloads/)
+- Relative API key(s) (HuggingFace API key or other platforms to access ML models, e.g. Replicate)
+- Python 3.11 or higher
+  
+**Requirements**
+
+Ensure that the following dependencies are installed:
+- Hugging Face Transformers library
+- LangChain community library
+- Python 3.11+
+- PyTorch
+- bitsandbytes
+- ChromaDB vector storage library
+- Additional dependencies if required by your environment.
+
+### Installation
+1. Install dependencies.
+   You can install dependencies using :
+   ```
+   pip install -r requirements.txt
+   ```
+
+
 
 
 **Workflow**
