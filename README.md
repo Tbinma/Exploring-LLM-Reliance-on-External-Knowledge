@@ -57,9 +57,16 @@ python vector_database.py
 llm = 
 
 
-4. Create a question/SYSTEM prompt using the provided utility? functions.?
+4. Create a custom prompt using the provided utility? functions.?
 
-line to change the prompt
+prompt_template = """
+Consider the following context when answering the question. Don't try to make up an answer.
+
+{context}
+
+Question: {question}
+Helpful Answer:
+"""
 
 
 5. Test run to query the Chroma DB?
