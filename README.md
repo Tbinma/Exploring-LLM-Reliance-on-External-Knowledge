@@ -5,7 +5,7 @@ Some text about the study ...  Abstract / link to paper / ... Overview
 Llama
 RAG
 Figure 1. 
-
+![alt text](https://github.com/Tbinma/Exploring-LLM-Reliance-on-External-Knowledge/blob/main/Workflow.png?raw=true)
 
 ## Getting Started
 
