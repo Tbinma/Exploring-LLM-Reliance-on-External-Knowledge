@@ -55,13 +55,17 @@ vectordb = Chroma(
 )
 ```
 
-3. Load the base Llama model # Your selected language model
+3. Load the base Llama model
+  
+ Your selected language model
 ```
 model_id = "meta-llama/Llama-2-13b-hf"
 
 ```
 
-4. Create a custom prompt as in custom prompt.py. Example of weak prompt style:
+4. Create a custom prompt as in custom prompt.py.
+
+Example of weak prompt style:
 ```
 prompt_template = """
 Consider the following context when answering the question. Don't try to make up an answer.
@@ -89,12 +93,8 @@ query = "Your query here"
 # Execute the query
 llm_response = QnA(query)
 ```
-example and code is only with dense 
-
-6. if you want to use hybrid use - code.py
-
-7.  Evaluate the system answers using LLMs-as-judges:
-Refer to documentation [documentation]((https://github.com/explodinggradients/ragas)) to learn more.
+6.  Evaluate the system answers using LLMs-as-judges:
+Refer to [documentation](https://github.com/explodinggradients/ragas)  to learn more.
 
 Testbeds can be found in folder
 ```
@@ -121,4 +121,4 @@ project-root/
 
 
 [triviaqa-website]: http://nlp.cs.washington.edu/triviaqa/
-[documentation](https://github.com/explodinggradients/ragas)
+
