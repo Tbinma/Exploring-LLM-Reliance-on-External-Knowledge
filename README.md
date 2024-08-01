@@ -58,7 +58,8 @@ vectordb = Chroma(
 
 3. Load the base Llama model
 
-Select and load the desired language model. Changing the model is straightforward; simply update the model_id to the desired model identifier.
+Select and load the desired language model. 
+_Changing the model is straightforward_; simply update the model_id to the desired model identifier.
 ```
 model_id = "meta-llama/Llama-2-13b-hf"
 
@@ -109,7 +110,7 @@ llm_response = QnA(query)
 
 Refer to [documentation](https://github.com/explodinggradients/ragas)  to learn more.
 
-#### Testbeds can be found in folder ``` testbeds ```
+Testbeds can be found in folder ``` testbeds ```
 
 
 [triviaqa-website]: http://nlp.cs.washington.edu/triviaqa/
