@@ -6,6 +6,7 @@ Llama
 RAG
 Figure 1. 
 
+
 ## Getting Started
 
 TriviaQA dataset Source: https://www.kaggle.com/datasets/vissarionmoutafis/triviaqatosquad?resource=download 
