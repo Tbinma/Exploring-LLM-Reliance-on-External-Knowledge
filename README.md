@@ -22,7 +22,7 @@ The overall system architecture is depicted in the figure, detailing the sequent
 
 ## Getting Started
 
-TriviaQA dataset Source: https://www.kaggle.com/datasets/vissarionmoutafis/triviaqatosquad?resource=download 
+
 
 ### Prerequisites
 
