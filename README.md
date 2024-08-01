@@ -42,6 +42,7 @@ Ensure that the following dependencies are installed:
 
 ### Installation
 1. Install dependencies.
+
 You can install dependencies using :
 ```
 pip install -r requirements.txt
@@ -56,7 +57,7 @@ vectordb = Chroma(
 ```
 
 3. Load the base Llama model
-  
+Select and load the desired language model. Changing the model is straightforward; simply update the model_id to the desired model identifier.
  Your selected language model
 ```
 model_id = "meta-llama/Llama-2-13b-hf"
