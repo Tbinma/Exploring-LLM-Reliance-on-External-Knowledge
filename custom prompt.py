@@ -25,7 +25,7 @@ PROMPT = PromptTemplate(
 chain_type_kwargs = {"prompt": PROMPT}
 
 
-#add chain_type_kwargs=chain_type_kwargs in the main ()
+#add/uncomment chain_type_kwargs=chain_type_kwargs in the main ()
 
 # QnA = RetrievalQA.from_chain_type(llm=llm,
 #                                   chain_type="stuff",
