@@ -1,6 +1,13 @@
 # QA-RAG: Exploring LLM Reliance on External Knowledge 
 
-Some text about the study ...  Abstract / link to paper / ... Overview
+- This repo contains code and resources for the paper "QA-RAG: Exploring LLM Reliance on External Knowledge".
+
+- The bemchmark dataset can be found and downloaded at [TriviaQA website][triviaqa-website].  
+
+For suggestions and comments please contact Aigerim Mansurova (<222215@astanait.edu.kz).
+
+
+
 ## Overview
 Llama
 RAG
