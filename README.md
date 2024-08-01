@@ -81,13 +81,14 @@ Helpful Answer:
 ```
 
 5. Initialize the Retriever.
+   
 Set up the retriever to interact with the Chroma database. The retriever will fetch relevant documents based on similarity search.
 
 ```
 retriever = vectordb.as_retriever(search_type="similarity", search_kwargs={"k": 3}) #top=k = 3
 ```
 
-5. Query the Chroma database and obtain answers using a RAG approach, leveraging a selected language model:
+6. Query the Chroma database and obtain answers using a RAG approach, leveraging a selected language model:
 ```
 QnA = RetrievalQA.from_chain_type(
     llm=llm,                          
@@ -103,10 +104,12 @@ query = "Your query here"
 # Execute the query
 llm_response = QnA(query)
 ```
-6.  Evaluate the system answers using LLMs-as-judges:
-Refer to [documentation](https://github.com/explodinggradients/ragas)  to learn more.
-Testbeds can be found in folder ``` testbeds ```
 
+7.  Evaluate the system answers using LLMs-as-judges:
+
+Refer to [documentation](https://github.com/explodinggradients/ragas)  to learn more.
+
+#### Testbeds can be found in folder ``` testbeds ```
 
 
 [triviaqa-website]: http://nlp.cs.washington.edu/triviaqa/
