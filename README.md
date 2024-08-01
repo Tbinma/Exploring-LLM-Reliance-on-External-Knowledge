@@ -4,8 +4,16 @@ Some text about the study ...  Abstract / link to paper / ... Overview
 ## Overview
 Llama
 RAG
-Figure 1. 
+
+
 ![alt text](https://github.com/Tbinma/Exploring-LLM-Reliance-on-External-Knowledge/blob/main/Workflow.png?raw=true)
+The overall system architecture is depicted in figure above, detailing the sequential steps as follows:
+1.	The query is forwarded to the embedding model for encoding into an embedded query vector.
+2.	The embedded query vector is then transmitted to a vector database.
+3.	The retriever algorithm dictates the retrieval of the top-k pertinent segments from the database.
+4.	Subsequently, both the query text and the retrieved segments are forwarded to the Generator.
+5.	LLM generates output that must be relevant and contextually connected to the origi-nal query and the information retrieved from the database.
+
 
 ## Getting Started
 
