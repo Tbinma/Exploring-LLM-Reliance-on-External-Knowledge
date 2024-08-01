@@ -80,6 +80,13 @@ Helpful Answer:
 """
 ```
 
+5. Initialize the Retriever.
+Set up the retriever to interact with the Chroma database. The retriever will fetch relevant documents based on similarity search.
+
+```
+retriever = vectordb.as_retriever(search_type="similarity", search_kwargs={"k": 3}) #top=k = 3
+```
+
 5. Query the Chroma database and obtain answers using a RAG approach, leveraging a selected language model:
 ```
 QnA = RetrievalQA.from_chain_type(
@@ -98,28 +105,7 @@ llm_response = QnA(query)
 ```
 6.  Evaluate the system answers using LLMs-as-judges:
 Refer to [documentation](https://github.com/explodinggradients/ragas)  to learn more.
-
-Testbeds can be found in folder
-```
-testbeds
-```
-
-
- 
-!!! change at the end
-**Project Structure**
-
-The project structure is organized as follows:
-
-```
-project-root/
-  ├── README.md
-  ├── main.py               # Training script (customize for your dataset)
-  ├── eval.py               # Inference script for question answering
-  ├── model.py              # Llama model definition and utilities
-  ├── dataset.py            # Dataset loading and preprocessing
-  └── requirements.txt      # List of Python dependencies
-```
+Testbeds can be found in folder ``` testbeds ```
 
 
 
