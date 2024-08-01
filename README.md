@@ -57,7 +57,7 @@ python vector_database.py
 llm = 
 
 
-4. Create a custom prompt using the provided utility? functions.?
+4. Create a custom prompt as in custom prompt.py. Example of weak prompt style:
 ```
 prompt_template = """
 Consider the following context when answering the question. Don't try to make up an answer.
@@ -69,21 +69,16 @@ Helpful Answer:
 """
 ```
 
-5. Test run to query the Chroma DB?
-answer without llm, just 
-response with sim.search
-
-
-6. query to chroma with LLM answers 
+5. query to chroma with LLM answers 
    Test run to query the Chroma DB, the below command will return an output based on RAG and the selected model:
 ```
 python query_data.py "Which role does Adam Goldberg plays?"
 ```
 example and code is only with dense 
 
-7. if you want to use hybrid use - code.py
+6. if you want to use hybrid use - code.py
 
-8.  Evaluate the system answers using LLMs-as-judges:
+7.  Evaluate the system answers using LLMs-as-judges:
 ```
 llm eval.py
 ```
