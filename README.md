@@ -9,12 +9,10 @@ For suggestions and comments please contact Aigerim Mansurova (<222215@astanait.
 
 
 ## Overview
-Llama
-RAG
 
+The overall system architecture is depicted in the figure, detailing the sequential steps as follows:
 
 ![alt text](https://github.com/Tbinma/Exploring-LLM-Reliance-on-External-Knowledge/blob/main/Workflow.png?raw=true)
-The overall system architecture is depicted in figure above, detailing the sequential steps as follows:
 1.	The query is forwarded to the embedding model for encoding into an embedded query vector.
 2.	The embedded query vector is then transmitted to a vector database.
 3.	The retriever algorithm dictates the retrieval of the top-k pertinent segments from the database.
