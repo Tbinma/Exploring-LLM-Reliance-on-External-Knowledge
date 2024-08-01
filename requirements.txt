@@ -1,0 +1,9 @@
+transformers
+accelerate
+einops
+bitsandbytes
+huggingface_hub
+sentence-transformers
+langchain
+chromadb
+langchain-community
