@@ -58,7 +58,7 @@ llm =
 
 
 4. Create a custom prompt using the provided utility? functions.?
-
+```
 prompt_template = """
 Consider the following context when answering the question. Don't try to make up an answer.
 
@@ -67,7 +67,7 @@ Consider the following context when answering the question. Don't try to make up
 Question: {question}
 Helpful Answer:
 """
-
+```
 
 5. Test run to query the Chroma DB?
 answer without llm, just 
