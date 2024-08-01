@@ -64,7 +64,9 @@ model_id = "meta-llama/Llama-2-13b-hf"
 
 ```
 
-4. Create a custom prompt as in custom prompt.py.
+4. Custom the prompt if necessary.
+
+Refer to ```custom_prompt.py```,
 
 Example of weak prompt style:
 ```
