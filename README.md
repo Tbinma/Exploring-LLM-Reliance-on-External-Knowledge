@@ -49,13 +49,17 @@ pip install -r requirements.txt
 
 2. Create the Chroma DB (external knowledge base):
 ```
-python vector_database.py
+vectordb = Chroma(
+    embedding=embedding_model,
+    persist_directory=persist_directory #path to directory for vector database
+)
 ```
- !!!!! CHANGEE FOR HF  
 
-3. Load the base Llama model 
-llm = 
+3. Load the base Llama model # Your selected language model
+```
+model_id = "meta-llama/Llama-2-13b-hf"
 
+```
 
 4. Create a custom prompt as in custom prompt.py. Example of weak prompt style:
 ```
@@ -69,10 +73,21 @@ Helpful Answer:
 """
 ```
 
-5. query to chroma with LLM answers 
-   Test run to query the Chroma DB, the below command will return an output based on RAG and the selected model:
+5. Query the Chroma database and obtain answers using a RAG approach, leveraging a selected language model:
 ```
-python query_data.py "Which role does Adam Goldberg plays?"
+QnA = RetrievalQA.from_chain_type(
+    llm=llm,                          
+    chain_type="stuff",               
+    retriever=retriever,              
+    # chain_type_kwargs=chain_type_kwargs, # Optional: Custom prompt configuration
+    return_source_documents=True      # Return source documents along with the answer
+)
+
+# Define the query
+query = "Your query here"
+
+# Execute the query
+llm_response = QnA(query)
 ```
 example and code is only with dense 
 
